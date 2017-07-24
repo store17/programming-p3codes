@@ -1,0 +1,23 @@
+while(p!=0)
+		{
+			num=num*10+p%10;
+			p=p/10;
+		}
+		printf("%d",num);
+	   while(num!=0)
+	   {
+		   if(num%10>5){
+		   printf("%d",num%10);num=num/10;}
+		   else
+		   {
+			   p=num%10;
+			   num1=p*10+(num/10)%10;
+			   if(num1>15)
+			    printf("%d",p);
+			    else
+			    {
+					printf("%c",'A'+num1-10);
+					num=num/10;
+				}
+		   }
+	   }
